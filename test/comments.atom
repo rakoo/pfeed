@@ -1,0 +1,921 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xml:lang="en-US" xmlns="http://www.w3.org/2005/Atom">
+  <id>tag:linuxfr.org,2005:/nodes/95089/comments</id>
+  <link rel="alternate" type="text/html" href="https://linuxfr.org"/>
+  <link rel="self" type="application/atom+xml" href="https://linuxfr.org/nodes/95089/comments.atom"/>
+  <title>LinuxFr.org : les commentaires pour Sortie du noyau Linux 3.6</title>
+  <updated>2012-10-01T09:57:42+02:00</updated>
+  <icon>/favicon.png</icon>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1395272</id>
+    <published>2012-10-05T08:12:08+02:00</published>
+    <updated>2012-10-05T08:12:08+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1395272"/>
+    <title>Re: Je ne vais pas le pleurer le cache de routage..</title>
+    <content type="html">&lt;p&gt;En visio, l'audio est prioritaire mais les sautes de trames vidéo sont monaies courantes&amp;#8230;&lt;/p&gt;
+
+&lt;p&gt;D'ailleurs un truc classique à savoir, forcer le 100 ou le giga sur les ports des commutateurs au niveau des équipements de visio améliore grandement la qualité. Comme quoi, rien que le petit dialogue entre le PC et le switch peux perturber la communication.&lt;/p&gt;</content>
+    <author>
+      <name>Sytoka Modon</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394809</id>
+    <published>2012-10-04T00:03:40+02:00</published>
+    <updated>2012-10-04T00:03:40+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394809"/>
+    <title>Re: Je ne vais pas le pleurer le cache de routage..</title>
+    <content type="html">&lt;p&gt;si tu fais du tcp c'est qu'a priori tu peux te permettre de perdre des paquets.&lt;br /&gt;
+en udp c'est un peu plus génant, encore que si le choix s'est fait sur de l'UDP c'est que tu peux te le permettre&lt;/p&gt;
+
+&lt;p&gt;par exemple sur la voip tu peux te permettre de perdre un paquet de temps en temps, perdre 20ms dans une conversation, c'est pas vraiment génant.&lt;/p&gt;</content>
+    <author>
+      <name>fredezic</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394671</id>
+    <published>2012-10-03T15:21:58+02:00</published>
+    <updated>2012-10-03T15:21:58+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394671"/>
+    <title>Re: Merci pour la news</title>
+    <content type="html">&lt;p&gt;Il &lt;strong&gt;devrait&lt;/strong&gt; le faire. Mais ce n'est pas si évident que cela.&lt;/p&gt;
+
+&lt;p&gt;Sur Debian Testing/Wheezy, et suite à des mises à jour, j'ai remarqué un temps de mise en hibernation plus long qu'à l'accoutumé (et ce, même après un reboot de la machine). Depuis que j'ai rajouté un script qui fait opérations, j'ai retrouvé un temps de mise en hibernation qui soit rapide.&lt;/p&gt;</content>
+    <author>
+      <name>Olivier</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394587</id>
+    <published>2012-10-03T09:28:26+02:00</published>
+    <updated>2012-10-03T09:28:26+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394587"/>
+    <title>Re: Je ne vais pas le pleurer le cache de routage..</title>
+    <content type="html">&lt;p&gt;Pour le multijoueur ok, pour la voip je dirais que ça dépend beaucoup du nombre de paquets perdus, le trou peut être quasiment inaudible..&lt;/p&gt;</content>
+    <author>
+      <name>reno</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394512</id>
+    <published>2012-10-02T19:27:19+02:00</published>
+    <updated>2012-10-02T19:27:19+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394512"/>
+    <title>Re: Merci pour la news</title>
+    <content type="html">&lt;p&gt;Je viens de lire un peu la mailing list. De ce que j'ai compris, l'auteur a en partie dupliqué le fonctionnement de ce qui se faisait en userland: &lt;a href="https://lkml.org/lkml/2012/5/9/185"&gt;https://lkml.org/lkml/2012/5/9/185&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>Alexandre BELLONI</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394511</id>
+    <published>2012-10-02T19:14:41+02:00</published>
+    <updated>2012-10-02T19:14:41+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394511"/>
+    <title>Re: Je ne vais pas le pleurer le cache de routage..</title>
+    <content type="html">&lt;blockquote&gt;
+&lt;p&gt;Comprends pas là? Les pertes de paquets ça arrive, lors d'un changement de route ou autre, donc de toute manière il faut bien un mécanisme de reprise soit fourni par la couche réseau TCP/SCTP soit à faire soit même (le reste).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Dans le cas ou tu fait du téléchargement de grand mère ça ne pose aucun problème. Mais pour tout le reste, dans bien des cas c'est irrécupérable. Par exemple pour le multijoueur ou la voip (ou tout ce qui à une contrainte de délai) si tu perd un paquet, t'est foutu, et le temps que tu t'en rende compte, c'est déjà trop tard.&lt;/p&gt;</content>
+    <author>
+      <name>Batchyx</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394489</id>
+    <published>2012-10-02T17:16:07+02:00</published>
+    <updated>2012-10-02T17:16:07+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394489"/>
+    <title>Re: Merci pour la news</title>
+    <content type="html">&lt;p&gt;C'est marrant mais dans les faits, ce n'est pas du tout ça que j'observe : quand je mets une machine en veille hybride, elle se met instantanément en veille mémoire, puis elle se réveille au bout du délai configuré pour se mettre en veille disque cette fois-ci (avec les messages qui vont bien à l'écran).&lt;/p&gt;
+
+&lt;p&gt;Ça vient peut-être des scripts PM de Debian, ou alors du module de veille (j'utilise celui par défaut mais j'ai lu que uswsusp n'avait pas besoin de réveiller la machine pour se mettre en veille disque), mais c'est ce que j'obtiens après test.&lt;/p&gt;
+
+&lt;p&gt;En tout cas, si la doc dit ça, quelle est donc la nouveauté apportée par ce noyau 3.6 (à part de se synchroniser avec GNOME) ?&lt;/p&gt;</content>
+    <author>
+      <name>zebra3</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394481</id>
+    <published>2012-10-02T16:43:33+02:00</published>
+    <updated>2012-10-02T16:43:33+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394481"/>
+    <title>Re: Merci pour la news</title>
+    <content type="html">&lt;p&gt;Ça n'a aucun intérêt, le noyau le fait déjà.&lt;/p&gt;</content>
+    <author>
+      <name>Thomas Petazzoni</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394478</id>
+    <published>2012-10-02T16:35:44+02:00</published>
+    <updated>2012-10-02T16:35:44+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394478"/>
+    <title>Re: Merci pour la news</title>
+    <content type="html">&lt;p&gt;Eh bien, c'est bien ce que fait suspend-hybrid. Il met la RAM sur le disque comme pour un suspend to disk (&lt;em&gt;first the state of the system is saved to disk - just like with hibernate&lt;/em&gt;) puis il part en suspend to ram (&lt;em&gt;instead of poweroff, the system goes in suspend state&lt;/em&gt;). Si il y a une coupure de courant, on redémarrera avec l'image du suspend to disk. Ensuite, t'as juste la flexibilité supplémentaire de pouvoir mettre un délai entre suspend to ram et poweroff si tu le désires.&lt;/p&gt;</content>
+    <author>
+      <name>Alexandre BELLONI</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394447</id>
+    <published>2012-10-02T13:47:43+02:00</published>
+    <updated>2012-10-02T13:47:43+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394447"/>
+    <title>Re: Sockets Unix</title>
+    <content type="html">&lt;p&gt;Justement, ma question c'est de savoir si ça concerne une toute partie des utilisateurs ou si c'est un cas assez fréquent.&lt;/p&gt;</content>
+    <author>
+      <name>Xavier Claude</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394427</id>
+    <published>2012-10-02T12:00:19+02:00</published>
+    <updated>2012-10-02T12:00:19+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394427"/>
+    <title>Re: Sockets Unix</title>
+    <content type="html">&lt;p&gt;Gamme UltraViolet chez SGI si mes souvenirs sont bons&amp;#8230;&lt;/p&gt;</content>
+    <author>
+      <name>Sytoka Modon</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394392</id>
+    <published>2012-10-02T09:55:42+02:00</published>
+    <updated>2012-10-02T09:55:42+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394392"/>
+    <title>Re: Je ne vais pas le pleurer le cache de routage..</title>
+    <content type="html">&lt;blockquote&gt;
+&lt;p&gt;Dans les cas usuels, ça ne devrai pas être le cas. Moi quand je change mes routes, tout le cache est déjà flushé par le noyau.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;C'est vieux ce dont je parles: noyau 2.4 et j'essayai de baisser à quelques ms le temps de basculement et le timer entre 2 flush du cache des routes étaient à 20ms par défaut (de mémoire), donc un utilisateur 'normal' ne s'en apercevrait pas.&lt;/p&gt;
+
+&lt;p&gt;Une fois que tu comprends le mécanisme pas de problème, mais coté documentation c'était (c'est?) assez pauvre.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Et le problème que j'ai quand je veux changer des routes, c'est plutôt que tout les paquets dans la file de la première interface partent dans /dev/null. TCP s'en fout, mais pas le reste &amp;#8230;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Comprends pas là? Les pertes de paquets ça arrive, lors d'un changement de route &lt;em&gt;ou autre&lt;/em&gt;, donc de toute manière il faut bien un mécanisme de reprise soit fourni par la couche réseau TCP/SCTP soit à faire soit même (le reste).&lt;/p&gt;</content>
+    <author>
+      <name>reno</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394389</id>
+    <published>2012-10-02T09:45:21+02:00</published>
+    <updated>2012-10-02T09:45:21+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394389"/>
+    <title>Re: Sockets Unix</title>
+    <content type="html">&lt;p&gt;Quand tu vois qu'ils font aussi des optimisations pour 4096 processeurs, tu te dis qu'il y a des p&amp;#8230;. d'ordinateurs qui font tourner Linux..&lt;/p&gt;</content>
+    <author>
+      <name>reno</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394385</id>
+    <published>2012-10-02T09:25:43+02:00</published>
+    <updated>2012-10-02T09:25:43+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394385"/>
+    <title>Re: Merci pour la news</title>
+    <content type="html">&lt;p&gt;J'avoue, j'ai eu du mal à le piger donc j'ai encore du mal à l'expliquer.&lt;/p&gt;
+
+&lt;p&gt;Pour faire simple : &lt;/p&gt;
+
+&lt;ul&gt;&lt;li&gt;veille hybride : veille mémoire, &lt;strong&gt;puis&lt;/strong&gt; veille disque et extinction ;&lt;/li&gt;
+&lt;li&gt;veille combinée : veille mémoire et disque &lt;strong&gt;en même temps&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;En gros, la seconde c'est juste une veille mémoire standard avec copie du système en cas de coupure de courant.&lt;/p&gt;</content>
+    <author>
+      <name>zebra3</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394376</id>
+    <published>2012-10-02T08:20:56+02:00</published>
+    <updated>2012-10-02T08:20:56+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394376"/>
+    <title>Re: Nom de code</title>
+    <content type="html">&lt;p&gt;C'est un petit hélicoptère télécommandé d'appartement&lt;/p&gt;</content>
+    <author>
+      <name>Ummon</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394370</id>
+    <published>2012-10-02T07:42:00+02:00</published>
+    <updated>2012-10-02T07:42:00+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394370"/>
+    <title>Re: Nom de code</title>
+    <content type="html">&lt;blockquote&gt;
+&lt;p&gt;Skoi un(e) picooz ?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Abeilles, guêpes et autres saloperies qui piquent ?&lt;/p&gt;</content>
+    <author>
+      <name>windu.2b</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394349</id>
+    <published>2012-10-01T23:58:01+02:00</published>
+    <updated>2012-10-01T23:58:01+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394349"/>
+    <title>Re: petites coquines</title>
+    <content type="html">&lt;p&gt;ok, tout pris en compte. Merci.&lt;/p&gt;</content>
+    <author>
+      <name>baud123</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394345</id>
+    <published>2012-10-01T23:41:58+02:00</published>
+    <updated>2012-10-01T23:42:44+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394345"/>
+    <title>Re: Nom de code</title>
+    <content type="html">&lt;blockquote&gt;
+&lt;p&gt;Il parait qu'au début, le chat apporte sa proie morte : c'est pour que tu te nourrisses avec. Ensuite il te l'apporte vivante pour t'apprendre à chasser.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Comme si t'étais un de ses petits. Les chats c'est rien que des branleurs ;)&lt;/p&gt;
+
+&lt;p&gt;Skoi un(e) picooz ?&lt;/p&gt;
+
+&lt;p&gt;Moi je ne laisse pas mes deux chattes s'attaquer aux frelons et aux guêpes, j'ai trop peur qu'elles se fassent piquer. Je m'en occupe moi même, tatane à la main :/&lt;/p&gt;</content>
+    <author>
+      <name>Marotte</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394343</id>
+    <published>2012-10-01T23:31:45+02:00</published>
+    <updated>2012-10-01T23:31:45+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394343"/>
+    <title>Re: petites coquines</title>
+    <content type="html">&lt;p&gt;§ Améliorations de TCP :&lt;br /&gt;
+mise en queue d'attente -&amp;gt; mise en file d'attente &lt;br /&gt;
+envoyer des données en mêmes temps -&amp;gt; en même temps&lt;/p&gt;
+
+&lt;p&gt;§ Suppression du cache de routage IPv4 :&lt;br /&gt;
+un paquet qui viens de -&amp;gt; qui vient de&lt;br /&gt;
+et que tout ces paquets -&amp;gt; tous&lt;/p&gt;
+
+&lt;p&gt;§ Améliorations BTRFS :&lt;br /&gt;
+pour chaque sous-volume et snapshots. -&amp;gt; et (chaque) snapshot.&lt;/p&gt;
+
+&lt;p&gt;§ Améliorations dans la gestion de l'entropie&lt;br /&gt;
+le générateur de nombre aléatoire de Linux -&amp;gt; nombres aléatoires&lt;br /&gt;
+comme les numéro de série -&amp;gt; numéros&lt;/p&gt;
+
+&lt;p&gt;§ Pilotes graphiques :&lt;br /&gt;
+à causes de divers bugs -&amp;gt; à cause&lt;/p&gt;
+
+&lt;p&gt;§ Gestion de l'énergie sur ATA et PCIe :&lt;br /&gt;
+a contribué plusieurs patchs -&amp;gt; a apporté plusieurs patchs (ou autre formulation car on ne contribue rien, on contribue à)&lt;/p&gt;
+
+&lt;p&gt;§ En vrac :&lt;br /&gt;
+mode d'économie des processeur -&amp;gt; processeurs&lt;br /&gt;
+c'est à dire les périphérique USB -&amp;gt; périphériques&lt;br /&gt;
+Les algorithmes de chiffrement symétriques -&amp;gt; symétrique&lt;/p&gt;
+
+&lt;p&gt;§ Statistiques :&lt;br /&gt;
+qui ont contribué au moins un patch -&amp;gt; même punition, contribuer est intransitif donc : ont contribué à au moins&amp;#8230;&lt;/p&gt;
+
+&lt;p&gt;Concernant le lien sur les statistiques, il faut peut-être signaler que l'article récapitulatif de LWN nécessite de s'authentifier.&lt;/p&gt;</content>
+    <author>
+      <name>Yves Bourguignon</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394338</id>
+    <published>2012-10-01T22:26:17+02:00</published>
+    <updated>2012-10-01T22:26:17+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394338"/>
+    <title>Re: Nom de code</title>
+    <content type="html">&lt;blockquote&gt;
+&lt;p&gt;C'est assez surprenant que Minky lui apporte ces animaux vivants. D'habitude les chats les mangent et n'apportent que les viscères à leur humain&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Il parait qu'au début, le chat apporte sa proie morte : c'est pour que tu te nourrisses avec. Ensuite il te l'apporte vivante pour t'apprendre à chasser.&lt;/p&gt;
+
+&lt;p&gt;J'en ai 2 et ils jouent simplement avec&amp;#8230; Sauf les [moustiques|papillons|picooz|tout_machin_qui_vole] qui ont généralement moins de 30 secondes de durée de vie une fois repérés.&lt;/p&gt;</content>
+    <author>
+      <name>stopspam</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394330</id>
+    <published>2012-10-01T21:47:04+02:00</published>
+    <updated>2012-10-01T21:47:04+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394330"/>
+    <title>Re: Merci pour la news</title>
+    <content type="html">&lt;p&gt;Moi je ne vois toujours pas la différence avec pm-suspend-hybrid :&lt;/p&gt;
+&lt;pre&gt;
+&lt;code class=""&gt;       pm-suspend-hybrid
+           Hybrid-suspend is the process where first the state of the system
+           is saved to disk - just like with hibernate - but instead of
+           poweroff, the system goes in suspend state, which means it can
+           wakeup quicker than for normal hibernation. The advantage over
+           suspend is that you can resume even if you run out of power.
+           s2both(8) is an hybrid-suspend implementation.
+&lt;/code&gt;
+&lt;/pre&gt;</content>
+    <author>
+      <name>Alexandre BELLONI</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394311</id>
+    <published>2012-10-01T20:36:39+02:00</published>
+    <updated>2012-10-01T20:36:39+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394311"/>
+    <title>Re: Je ne vais pas le pleurer le cache de routage..</title>
+    <content type="html">&lt;p&gt;Dans les cas usuels, ça ne devrai pas être le cas. Moi quand je change mes routes, tout le cache est déjà flushé par le noyau. Le seul cas ou le cache à besoin d'être flushé manuellement, c'est lorsque la page de manuel de (par exemple) &lt;code&gt;ip rule&lt;/code&gt; te dit de le faire.&lt;/p&gt;
+
+&lt;p&gt;Et le problème que j'ai quand je veux changer des routes, c'est plutôt que tout les paquets dans la file de la première interface partent dans /dev/null. TCP s'en fout, mais pas le reste &amp;#8230;&lt;/p&gt;
+
+&lt;p&gt;Moi j'avais un autre bug chiant: Le cache dans 3.0 était mal foutu et lorsque tu recevait un ICMP redirect, il était appliqué jusqu'à la fin des temps, même si tu vidait ton cache et tes règles. Vu que maintenant ce bordel se trouve dans l'entrée de table de routage, si y a un problème, alors virer l'entrée de routage et la refaire est suffisant pour se débarrasser des redirections.&lt;/p&gt;</content>
+    <author>
+      <name>Batchyx</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394287</id>
+    <published>2012-10-01T19:03:55+02:00</published>
+    <updated>2012-10-01T19:03:55+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394287"/>
+    <title>Re: Sockets Unix</title>
+    <content type="html">&lt;p&gt;C'est peut-être plus le cas sur des serveurs ou sur des machines multi-utilisateurs.&lt;/p&gt;</content>
+    <author>
+      <name>Laurent Pointal</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394281</id>
+    <published>2012-10-01T18:47:33+02:00</published>
+    <updated>2012-10-01T18:47:33+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394281"/>
+    <title>Re: Merci pour la news</title>
+    <content type="html">&lt;blockquote&gt;
+&lt;p&gt;il purge d'abord les caches afin d'atteindre une certaine taille définie dans le fichier /sys/power/image_size&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Personnellement, je purge &lt;strong&gt;complètement&lt;/strong&gt; les caches d'écriture ("sync") et de lecture ("echo 3 &amp;gt; /proc/sys/vm/drop_caches") lors de l'hibernation&lt;/p&gt;
+
+&lt;p&gt;Ainsi, je libère toute la ram "cache" d'un coup, et ne sauve sur le disque que la ram réellement utile (programmes + données).&lt;/p&gt;
+
+&lt;p&gt;La commande "free" lancée avant et après la purge permet de savoir combien l'on a économisé.&lt;/p&gt;</content>
+    <author>
+      <name>Olivier</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394273</id>
+    <published>2012-10-01T18:03:33+02:00</published>
+    <updated>2012-10-01T18:03:33+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394273"/>
+    <title>Sockets Unix</title>
+    <content type="html">&lt;p&gt;À propos des optimisations sur les sockets Unix. Ça arrive souvent d'avoir 200k sockets ouvertes ou ce sont des cas particuliers ? Personnellement, je suis loin du compte :&lt;/p&gt;
+&lt;pre&gt;
+&lt;code class=""&gt;$ sudo wc -l /proc/net/unix
+[sudo] password for xavier: 
+901 /proc/net/unix
+&lt;/code&gt;
+&lt;/pre&gt;</content>
+    <author>
+      <name>Xavier Claude</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394269</id>
+    <published>2012-10-01T17:55:36+02:00</published>
+    <updated>2012-10-01T17:55:36+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394269"/>
+    <title>Re: Merci pour la news</title>
+    <content type="html">&lt;p&gt;Les smartphones utilisent de la low power DRAM(LPDRAM ?). Elles sont disponibles en fréquence plus basse et en taille inférieur de 4 fois au DRAM classique (en gros).&lt;/p&gt;
+
+&lt;p&gt;Elle ont un mode rétention qui drain 1000 fois (mille, 3 ordres de grandeur) moins de courant que les DRAM classiques, d'où l'efficacité du suspend 2 ram des smartphone.&lt;/p&gt;
+
+&lt;p&gt;Je regrette d'ailleurs que personne n'est tenté une machine à base d'atom + ssd avec ce genre de LPDRAM.&lt;/p&gt;</content>
+    <author>
+      <name>Nicolas Boulay</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394263</id>
+    <published>2012-10-01T17:27:14+02:00</published>
+    <updated>2012-10-01T17:27:14+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394263"/>
+    <title>Re: Merci pour la news</title>
+    <content type="html">&lt;p&gt;Non :), je ne dis pas d'attendre que ça passe en dessous de 50% pour enregistrer l'image: au moment de la mise en veille, l'ordinateur choisit entre le suspend-to-RAM seule ou la veille hybride d'après le niveau actuel de la batterie. Car la batterie peut facilement tenir plus d'une journée en suspend-to-RAM. C'est donc bien suffisant et j'ai rarement besoin du suspend-to-disk, sauf si la batterie est presque vide.&lt;/p&gt;
+
+&lt;p&gt;Par contre c'est vrai que l'idée de rester en veille RAM jusqu'à un certain niveau de batterie serait un plus :) Ce serait bien si les batteries pouvaient envoyer un message lorsqu'elles passent en dessous d'un certain niveau pour réveiller le portable, qui se mettrait alors en suspend-to-disk.&lt;/p&gt;</content>
+    <author>
+      <name>ziliss</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394261</id>
+    <published>2012-10-01T17:20:29+02:00</published>
+    <updated>2012-10-01T17:20:29+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394261"/>
+    <title>Re: Merci pour la news</title>
+    <content type="html">&lt;p&gt;Pour avoir installé une ubuntu sur un pc portable récent, je peux vous dire que c'est super agréable de voir son bureau en moins de 2s après ouverture de l'écran (idem que sous 7). Quand je vois que sur mon portable de 2009 ça prends presque 10-20s ! &lt;br /&gt;
+Par contre je n'ai pas testé la vitesse de décharge sous l'un ou l'autre OS, mais je pense que des progrès ont été faits de ce coté là aussi.&lt;br /&gt;
+Après s'être habitués à des téléphones ou tablettes qui tiennent entre 1 et plusieurs jours en veilles (tout en restant connectés), on a forcément envi que les PC suivent la marche !&lt;/p&gt;</content>
+    <author>
+      <name>Kytrix</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394233</id>
+    <published>2012-10-01T15:41:32+02:00</published>
+    <updated>2012-10-01T15:41:32+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394233"/>
+    <title>Re: Merci pour la news</title>
+    <content type="html">&lt;blockquote&gt;
+&lt;p&gt;Peut-être qu'un système plus intelligent qui copie l'image sur le disque uniquement si le niveau de la batterie est en dessous d'un certain seuil serait une bonne idée ? Par exemple en dessous de 50%.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Il faudrait redémarrer un tas de trucs.&lt;/p&gt;</content>
+    <author>
+      <name>Barret Michel</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394231</id>
+    <published>2012-10-01T15:40:18+02:00</published>
+    <updated>2012-10-01T15:40:18+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394231"/>
+    <title>Re: Merci pour la news</title>
+    <content type="html">&lt;p&gt;Je pense qu'il ne faut pas imaginer cela comme une alternative à l'hibernation mais plutôt à la veille. C'est comme une veille mais on a toujours notre session même si la batteries s'est déchargée entre temps. Ça n'est pas pire qu'une simple mise en veille (pour la batterie).&lt;/p&gt;</content>
+    <author>
+      <name>Barret Michel</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394230</id>
+    <published>2012-10-01T15:39:48+02:00</published>
+    <updated>2012-10-01T15:39:48+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394230"/>
+    <title>Re: petite coquille</title>
+    <content type="html">&lt;p&gt;Non ça c'est tout ce qui se passe à la campagne.&lt;/p&gt;</content>
+    <author>
+      <name>zebra3</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394229</id>
+    <published>2012-10-01T15:39:30+02:00</published>
+    <updated>2012-10-01T15:39:30+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394229"/>
+    <title>Re: Merci pour la news</title>
+    <content type="html">&lt;p&gt;Il faut savoir que le noyau n'écrit pas tout le contenu de la RAM sur le disque, il purge d'abord les caches afin d'atteindre une certaine taille définie dans le fichier /sys/power/image_size (chez moi, elle est de 2 Go, mais je ne sais pas si ça dépend du système). Donc déjà, ça n'écrit pas forcément 4 Go.&lt;/p&gt;
+
+&lt;p&gt;D'autre part, certains outils comme uswsusp compressent l'image avant écriture ; les processeurs actuels étant suffisamment puissants pour que ça aille plus vite que d'écrire une image plus grosse, ça permet également de gagner du temps.&lt;/p&gt;</content>
+    <author>
+      <name>zebra3</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394224</id>
+    <published>2012-10-01T15:23:58+02:00</published>
+    <updated>2012-10-01T15:23:58+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394224"/>
+    <title>Re: Merci pour la news</title>
+    <content type="html">&lt;p&gt;Pour le portable, il faut aussi tenir compte du temps d'écriture de la RAM.&lt;/p&gt;
+
+&lt;p&gt;Avec une RAM de 4 Go, ça veut dire attendre environ 30 secondes après la mise en veille (suivant les cas). En effet je pense que déplacer le portable juste au moment où il écrit à grande vitesse sur le disque dur n'est pas une bonne idée&amp;#8230;&lt;/p&gt;
+
+&lt;p&gt;Peut-être qu'un système plus intelligent qui copie l'image sur le disque uniquement si le niveau de la batterie est en dessous d'un certain seuil serait une bonne idée ? Par exemple en dessous de 50%.&lt;/p&gt;</content>
+    <author>
+      <name>ziliss</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394215</id>
+    <published>2012-10-01T15:03:31+02:00</published>
+    <updated>2012-10-01T15:03:31+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394215"/>
+    <title>Re: petite coquille</title>
+    <content type="html">&lt;blockquote&gt;
+&lt;p&gt;"Voire même" est boulière redondant&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Tu veux dire sporadique ?&lt;/p&gt;</content>
+    <author>
+      <name>Didrik Pining</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394190</id>
+    <published>2012-10-01T13:44:06+02:00</published>
+    <updated>2012-10-01T13:44:06+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394190"/>
+    <title>Re: Merci pour la news</title>
+    <content type="html">&lt;p&gt;Intéressant: si on ajoute ça a la mise en sommeil hybride: c'est encore plus intéressant: moins de risque que l'ordinateur surchauffe en cas de problème pour passer de la veille à l&amp;#8217;hibernation (puisque l'hibernation est fait au début).&lt;/p&gt;</content>
+    <author>
+      <name>reno</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394185</id>
+    <published>2012-10-01T13:35:52+02:00</published>
+    <updated>2012-10-01T13:35:52+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394185"/>
+    <title>Re: Merci pour la news</title>
+    <content type="html">&lt;p&gt;ha oui, dit comme ça, c'est plus crédible !&lt;/p&gt;</content>
+    <author>
+      <name>Christophe Merlet</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394182</id>
+    <published>2012-10-01T13:31:03+02:00</published>
+    <updated>2012-10-01T13:31:03+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394182"/>
+    <title>Re: Merci pour la news</title>
+    <content type="html">&lt;p&gt;Si ma mémoire est bonne, c'est ce qui se passe depuis quelques années sur les portables Apple. Et c'est très pratique comme fonctionnalité!&lt;/p&gt;</content>
+    <author>
+      <name>woopla</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394181</id>
+    <published>2012-10-01T13:23:27+02:00</published>
+    <updated>2012-10-01T13:23:27+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394181"/>
+    <title>Re: petite coquille</title>
+    <content type="html">&lt;p&gt;Merci Maxime&amp;lt; et liberforce&amp;lt;, corrigé dans le texte.&lt;/p&gt;</content>
+    <author>
+      <name>baud123</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394177</id>
+    <published>2012-10-01T13:14:13+02:00</published>
+    <updated>2012-10-01T13:14:13+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394177"/>
+    <title>Re: Nom de code</title>
+    <content type="html">&lt;p&gt;C'est assez surprenant que Minky lui apporte ces animaux vivants. D'habitude les chats les mangent et n'apportent que les viscères à leur humain :)&lt;/p&gt;</content>
+    <author>
+      <name>Marotte</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394176</id>
+    <published>2012-10-01T13:11:31+02:00</published>
+    <updated>2012-10-01T13:11:31+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394176"/>
+    <title>Re: Nom de code</title>
+    <content type="html">&lt;p&gt;terroriser les musaraignes en bavant, c'est moche.&lt;/p&gt;</content>
+    <author>
+      <name>Richard Genoud</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394174</id>
+    <published>2012-10-01T13:03:12+02:00</published>
+    <updated>2012-10-01T13:03:28+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394174"/>
+    <title>Re: Nom de code</title>
+    <content type="html">&lt;p&gt;Bin non, là c'est une musaraigne. Quelle terreur son chat :)&lt;/p&gt;</content>
+    <author>
+      <name>Marotte</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394167</id>
+    <published>2012-10-01T12:41:45+02:00</published>
+    <updated>2012-10-01T12:41:45+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394167"/>
+    <title>Re: Merci pour la news</title>
+    <content type="html">&lt;p&gt;En lisant ton commentaire, je viens de comprendre ce qu'est la mise en veille combinée. Je croyais que c'était la même chose que la veille hybride mais pas du tout :&lt;/p&gt;
+
+&lt;ul&gt;&lt;li&gt;la veille hybride place la machine en veille RAM, puis en veille disque après un délai donné ;&lt;/li&gt;
+&lt;li&gt;la veille combinée prépare le système en veille disque, mais reste en veille RAM une fois l'image copiée.&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;Et en effet c'est très intéressant comme fonction. Est-ce que ça existe déjà ailleurs ? Il aurait été intéressant de préciser ça dans la dépêche, pour bien comprendre ce qui existait déjà et l'avancée que c'est.&lt;/p&gt;</content>
+    <author>
+      <name>zebra3</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394162</id>
+    <published>2012-10-01T12:30:58+02:00</published>
+    <updated>2012-10-01T12:30:58+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394162"/>
+    <title>Re: Merci pour la news</title>
+    <content type="html">&lt;blockquote&gt;
+&lt;p&gt;La video de Greg KH est surprenante, surtout lorsqu'il dit qu'il passe plus de temps sur son skate qu'a programmer ! Ses journées font elle donc plus de 36h ?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Il ne dit pas qu'il passe plus de temps sur son skate, il dit qu'il a commencé « when I was like 8 or 9 years old, it's the only thing I've been doing longer than programming ».&lt;/p&gt;
+
+&lt;p&gt;C'est la seule chose qu'il fasse depuis plus longtemps que programmer, c'est à dire que c'est la seule chose qu'il fasse toujours et qu'il ait commencé plus tôt.&lt;/p&gt;</content>
+    <author>
+      <name>liberforce</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394161</id>
+    <published>2012-10-01T12:30:49+02:00</published>
+    <updated>2012-10-01T12:30:49+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394161"/>
+    <title>Re: Nom de code</title>
+    <content type="html">&lt;p&gt;ou peut être &lt;a href="https://plus.google.com/102150693225130002912/posts/XDbmiYxdTbP"&gt;celui-là&lt;/a&gt; (en tous cas pour le terrified)&lt;/p&gt;</content>
+    <author>
+      <name>Richard Genoud</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394158</id>
+    <published>2012-10-01T12:23:43+02:00</published>
+    <updated>2012-10-01T12:23:43+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394158"/>
+    <title>Re: Merci pour la news</title>
+    <content type="html">&lt;p&gt;Il faut aussi l'imaginer sur autre chose qu'un portable.&lt;br /&gt;
+Sur un pc fixe, ça permet d'être en suspend-to-ram, et si jamais il y a une coupure de courant, tu conserves quand même ta session.&lt;br /&gt;
+On peut aussi imaginer que la journée, le PC est en veille pour démarrer + rapidement, et que le soir, on coupe direct la multiprise sans avoir a sortir le PC de veille pour l'éteindre complètement.&lt;br /&gt;
+Mais sinon, effectivement, pour un portable, ce n'est peut être pas le top, par contre, pour une machine fixe, je trouve ça plutôt sympa.&lt;/p&gt;</content>
+    <author>
+      <name>Richard Genoud</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394153</id>
+    <published>2012-10-01T12:16:18+02:00</published>
+    <updated>2012-10-01T12:16:18+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394153"/>
+    <title>Re: Merci pour la news</title>
+    <content type="html">&lt;p&gt;C'est déjà possible.&lt;/p&gt;
+
+&lt;p&gt;man pm-action :&lt;/p&gt;
+&lt;pre&gt;
+&lt;code class=""&gt;       PM_HIBERNATE_DELAY [=900]
+           If you are using kernel suspend/resume and invoke
+           pm-suspend-hybrid, this environment variable controls how many
+           seconds the system will wait after going into suspend before waking
+           back up and hibernating. By default, this is set to 900 seconds (15
+           minutes).
+&lt;/code&gt;
+&lt;/pre&gt;</content>
+    <author>
+      <name>zebra3</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394152</id>
+    <published>2012-10-01T12:15:55+02:00</published>
+    <updated>2012-10-01T12:15:55+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394152"/>
+    <title>Re: petite coquille</title>
+    <content type="html">&lt;p&gt;"il est maintenant possible de swapper via NFS": le lien gagnerait à être sur l'information utile: le swap NFS plutôt que "maintenant possible"&lt;/p&gt;</content>
+    <author>
+      <name>liberforce</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394151</id>
+    <published>2012-10-01T12:15:22+02:00</published>
+    <updated>2012-10-01T12:15:22+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394151"/>
+    <title>Re: Merci pour la news</title>
+    <content type="html">&lt;p&gt;Je n'ai pas répondu à sa remarque sur le type de veille, juste à sa question sur la technologie des batteries actuelles.&lt;/p&gt;
+
+&lt;p&gt;De toute façon, ça dépend du délai défini entre veille RAM et veille disque ; il me semble que par défaut c'est 15 minutes. Donc à moins d'avoir une très mauvaise batterie, on arrive difficilement à faire une décharge complète en hibernation hybride (surtout en veille RAM)&amp;#8230;&lt;/p&gt;
+
+&lt;p&gt;Au passage, ça n'est pas vraiment une nouveauté, je fais ça avec les pm-utils sur un noyau 3.2 depuis un bon moment. À moins que c'était un hack et que c'est maintenant plus propre ?&lt;/p&gt;</content>
+    <author>
+      <name>zebra3</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394150</id>
+    <published>2012-10-01T12:14:04+02:00</published>
+    <updated>2012-10-01T12:14:04+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394150"/>
+    <title>Re: OpenGL 3.0</title>
+    <content type="html">&lt;p&gt;Pour compléter, Mesa 9.0 devrait sortir le 5 octobre : &lt;a href="http://lists.freedesktop.org/archives/mesa-dev/2012-September/028089.html"&gt;http://lists.freedesktop.org/archives/mesa-dev/2012-September/028089.html&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>Maxime</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394148</id>
+    <published>2012-10-01T12:07:36+02:00</published>
+    <updated>2012-10-01T14:07:55+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394148"/>
+    <title>Nom de code</title>
+    <content type="html">&lt;p&gt;Ah zut j'ai oublié de dire que le nom de code du noyau &lt;a href="http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commitdiff;h=979570e02981d4a8fc20b3cc8fd651856c98ee9d"&gt;avait changé&lt;/a&gt;. On passe donc de "Saber-toothed Squirrel" à "Terrified Chipmunk".&lt;br /&gt;
+Il est probable que l'origine du nouveau nom s'explique par &lt;a href="https://plus.google.com/+LinusTorvalds/posts/4tWgzbhGX2m"&gt;ce post Google+&lt;/a&gt; de Linus.&lt;/p&gt;</content>
+    <author>
+      <name>patrick_g</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394147</id>
+    <published>2012-10-01T12:04:44+02:00</published>
+    <updated>2012-10-01T12:06:32+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394147"/>
+    <title>Re: petite coquille</title>
+    <content type="html">&lt;p&gt;"issues de tous les &lt;s&gt;les&lt;/s&gt; systèmes" &amp;#8594; "issues de tous les systèmes"&lt;br /&gt;
+"one of the smaller drm -next pulls in age" &amp;#8594; "one of the smaller drm -next pulls in age&lt;strong&gt;s&lt;/strong&gt;"&lt;/p&gt;</content>
+    <author>
+      <name>liberforce</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394146</id>
+    <published>2012-10-01T12:04:43+02:00</published>
+    <updated>2012-10-01T12:04:43+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394146"/>
+    <title>Re: petite coquille</title>
+    <content type="html">&lt;p&gt;"un cache de routage à été introduit" =&amp;gt; a été.&lt;/p&gt;</content>
+    <author>
+      <name>Maxime</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394141</id>
+    <published>2012-10-01T11:47:50+02:00</published>
+    <updated>2012-10-01T11:47:50+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394141"/>
+    <title>Re: Merci pour la news</title>
+    <content type="html">&lt;p&gt;Je suis d'accord, il faudrait pouvoir mettre un timer de veille "RAM" après lequel la machine se fout en veille profonde.&lt;/p&gt;
+
+&lt;p&gt;Genre: je ferme l'écran mon ordi portable, il se met en veille "RAM" pendant 2 heures. Si au bout de 2h l'ordi n'a pas été réveillé, on passe en veille "Disque".&lt;/p&gt;</content>
+    <author>
+      <name>Gui13</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394137</id>
+    <published>2012-10-01T11:40:54+02:00</published>
+    <updated>2012-10-01T11:40:54+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394137"/>
+    <title>Re: Merci pour la news</title>
+    <content type="html">&lt;p&gt;il ne reste plus qu'à coder la fonction de réveille au bout d'une heure pour passer en vrai suspend to disk, bien plus rapidement que ne le ferait un cycle complet de réveille+s2d.&lt;/p&gt;</content>
+    <author>
+      <name>Nicolas Boulay</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394136</id>
+    <published>2012-10-01T11:40:47+02:00</published>
+    <updated>2012-10-01T11:40:47+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394136"/>
+    <title>Re: Merci pour la news</title>
+    <content type="html">&lt;p&gt;Euh comprends pas là, ce texte justifie la remarque de Christophe Merlet, si tu mets en hibernation, tu préserve la durée de vie de ta batterie car ce sera une recharge partielle, quand tu garde ton ordinateur en veuille et que la batterie se décharge totalement (cas anticipé par l'hibernation et veille combinée) et bien c'est une recharge complète donc pas bon pour ce type de batterie.&lt;br /&gt;
+Donc je suis d'accord avec lui: l'hibernation et veille combinée ça encourage la mise en veille jusqu'à décharge totale de la batterie ce qui n'est pas bon pour la batterie.&lt;/p&gt;
+
+&lt;p&gt;L'idéal: hibernation + SSD: ça poutre et ça préserve la durée de vie de la batterie.&lt;/p&gt;</content>
+    <author>
+      <name>reno</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394133</id>
+    <published>2012-10-01T11:33:39+02:00</published>
+    <updated>2012-10-01T11:33:39+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394133"/>
+    <title>Je ne vais pas le pleurer le cache de routage..</title>
+    <content type="html">&lt;p&gt;Je me souviens d'un projet où on voulait avoir le basculement le plus rapide possible d'une interface à l'autre en cas de panne et il y avait un problème: on change les route et là .. rien: les paquets sont toujours émis sur la mauvaise interface, après avoir chercher dans pas mal de direction, le coupable était en fait le cache de routage.&lt;br /&gt;
+Contournement du problème: "flusher" le cache de routage.&lt;/p&gt;
+
+&lt;p&gt;Dommage que je ne sois plus sur ce projet: je me demande la durée de prise en compte d'un changement de route avec ce nouveau code.&lt;/p&gt;</content>
+    <author>
+      <name>reno</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394130</id>
+    <published>2012-10-01T11:28:31+02:00</published>
+    <updated>2012-10-01T11:28:31+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394130"/>
+    <title>OpenGL 3.0</title>
+    <content type="html">&lt;p&gt;Ce noyau permet de bénéficier d'OpenGL 3.0 avec le futur mesa 9.0/1 ou depuis le dépôt git de celui-ci, avec les cartes graphiques ATI radeon (R600g).&lt;/p&gt;</content>
+    <author>
+      <name>Laurent Carlier</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394127</id>
+    <published>2012-10-01T11:24:35+02:00</published>
+    <updated>2012-10-01T11:24:59+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394127"/>
+    <title>Re: Merci pour la news</title>
+    <content type="html">&lt;p&gt;J'avais également un doute mais d'après la page Wikipédia sur les batteries de type &lt;a href="https://fr.wikipedia.org/wiki/Batterie_lithium-ion"&gt;lithium-ion&lt;/a&gt; (les plus répandues) :&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;ces batteries vieillissent moins vite lorsqu'elles sont rechargées par des recharges partielles que lorsqu'elles supportent des cycles complets de décharge/recharge&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Donc au contraire, cela semble les préserver.&lt;/p&gt;</content>
+    <author>
+      <name>zebra3</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394116</id>
+    <published>2012-10-01T10:56:43+02:00</published>
+    <updated>2012-10-01T10:56:43+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394116"/>
+    <title>Re: Merci pour la news</title>
+    <content type="html">&lt;p&gt;Tu as une source ?&lt;/p&gt;</content>
+    <author>
+      <name>Christophe Merlet</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394114</id>
+    <published>2012-10-01T10:52:40+02:00</published>
+    <updated>2012-10-01T10:52:40+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394114"/>
+    <title>Re: Merci pour la news</title>
+    <content type="html">&lt;p&gt;
+&lt;em&gt;&amp;gt;&amp;gt;Veille et hibernation combinée&lt;/em&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;em&gt;Ça me parait être une fausse bonne idée. le genre de fonction qui détruit prématurément une batterie en usant tout ses cycles de charge/décharge.&lt;/em&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Il me semble que la technologie des batteries actuelles fait que le vieillissement est linéaire et non pas fonction du nombre de charge/décharge&amp;#8230;&lt;/p&gt;</content>
+    <author>
+      <name>cosmocat</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394111</id>
+    <published>2012-10-01T10:42:57+02:00</published>
+    <updated>2012-10-01T10:42:57+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394111"/>
+    <title>Re: petite coquille</title>
+    <content type="html">&lt;p&gt;Les deux erreurs sont corrigées. Merci.&lt;/p&gt;</content>
+    <author>
+      <name>patrick_g</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394108</id>
+    <published>2012-10-01T10:31:50+02:00</published>
+    <updated>2012-10-01T10:31:50+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394108"/>
+    <title>Re: petite coquille</title>
+    <content type="html">&lt;p&gt;Dans la RC-2, autre erreur :&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;c'est &lt;s&gt;voire&lt;/s&gt; même un peu faible&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;"Voire même" est &lt;s&gt;boulière&lt;/s&gt; redondant&lt;/p&gt;</content>
+    <author>
+      <name>windu.2b</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394100</id>
+    <published>2012-10-01T10:11:25+02:00</published>
+    <updated>2012-10-01T10:11:25+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394100"/>
+    <title>petite coquille</title>
+    <content type="html">&lt;p&gt;Dans la partie sur le Bus CAN, je pense que c'est Volkswagen et non Wolkswagen.&lt;/p&gt;</content>
+    <author>
+      <name>olivier esver</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394092</id>
+    <published>2012-10-01T10:03:04+02:00</published>
+    <updated>2012-10-01T10:03:04+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394092"/>
+    <title>Merci pour la news</title>
+    <content type="html">&lt;blockquote&gt;
+&lt;p&gt;Veille et hibernation combinée&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Ça me parait être une fausse bonne idée. le genre de fonction qui détruit prématurément une batterie en usant tout ses cycles de charge/décharge.&lt;/p&gt;
+
+&lt;p&gt;On peut en savoir plus sur les améliorations apportées sur les pilotes audio ?&lt;/p&gt;
+
+&lt;p&gt;La video de Greg KH est surprenante, surtout lorsqu'il dit qu'il passe plus de temps sur son skate qu'a programmer ! Ses journées font elle donc plus de 36h ?&lt;br /&gt;
+Cela dit, quand on voit ses cernes, je ne suis pas sûr qu'il dorme souvent !&lt;/p&gt;</content>
+    <author>
+      <name>Christophe Merlet</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:linuxfr.org,2005:Comment/1394088</id>
+    <published>2012-10-01T09:57:42+02:00</published>
+    <updated>2012-10-01T09:57:42+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/news/sortie-du-noyau-linux-3-6#comment-1394088"/>
+    <title>Merci pour cet excellent article</title>
+    <content type="html">&lt;p&gt;patrick_g, tes articles sur la sortie des noyaux Linux sont toujours d'une qualité exceptionnelle, merci aux divers contributeurs de l'aider dans cette tâche.&lt;/p&gt;</content>
+    <author>
+      <name>Loyl</name>
+    </author>
+  </entry>
+</feed>
