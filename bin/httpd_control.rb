@@ -2,13 +2,10 @@ require 'sinatra'
 require 'trollop'
 require 'json'
 require 'couchrest'
-require 'feedzirra'
+require 'pfeed'
 
 set :port, 9494
 set :host, 'localhost'
-
-Feedzirra::Feed.add_common_feed_element(:link, :as => :hub, :value => :href, :with =>{:type => :hub})
-Feedzirra::Feed.add_common_feed_element('id')
 
 DBNAME = "http://localhost:5984/pfeed"
 DB = CouchRest.new("http://localhost:5984").database("pfeed")
@@ -27,19 +24,13 @@ post '/add_feed' do
   if existing_rows.size == 1 and existing_rows.first["key"] == url
     doc = CouchRest.get "#{DBNAME}/#{CGI.escape(existing_rows.first["id"])}"
   else
-    if (feed = Feedzirra::Feed.fetch_and_parse url)
-      doc = {
-        :_id => feed.id,
-        :feed_id => feed.id,
-        :title => feed.title,
-        :description => feed.description,
-        :url => feed.feed_url,
-        :hub => feed.hub, # feedzirra can only fetch one value for the moment
-        :type => :feed,
-      }
+    if (exploded_feed = PFeed.parse_and_explode_feed url)
+      payload = {:docs => exploded_feed.values.flatten}
+      CouchRest.post(DBNAME + "/_bulk_docs", payload)
 
-      # store doc
-      stored_doc = CouchRest.put(DBNAME + "/#{CGI.escape(doc[:_id])}", doc)
+      doc = exploded_feed[:feed]
+    else
+      doc = {:error => "error while parsing #{url}"}
     end
   end
 
