@@ -8,7 +8,10 @@ DBNAME = "http://localhost:5984/pfeed"
 feeds_urls = DB.view("pfeed-couch/list-feeds-without-hubs")["rows"].map{|feed| feed["key"]}
 exit if feeds_urls.empty?
 
-parsed_feeds = feeds_urls.map{|url| PFeed.parse_and_explode_feed(url).values}.flatten
+parsed_feeds = feeds_urls.map do |url|
+  modified_bits = PFeed.parse_and_explode_feed(url)
+  modified_bits.nil? ? nil : modified_bits.values
+end.compact.flatten
 
 payload = {:docs => parsed_feeds}
 CouchRest.post(DBNAME + "/_bulk_docs", payload)

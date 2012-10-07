@@ -20,9 +20,9 @@ post '/add_feed' do
   content_type :json
 
   url = params["url"]
-  existing_rows = PFeed.list_feeds([url])
+  existing_rows = PFeed.list_feeds(:keys => [url], :include_docs => true)
   if existing_rows.size == 1 and existing_rows.first["key"] == url
-    doc = CouchRest.get "#{DBNAME}/#{CGI.escape(existing_rows.first["id"])}"
+    doc = existing_rows.first["doc"]
   else
     if (exploded_feed = PFeed.parse_and_explode_feed url)
       payload = {:docs => exploded_feed.values.flatten}

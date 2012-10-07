@@ -7,15 +7,33 @@ module PFeed
   def self.parse_and_explode_feed url
     require 'base64'
 
+    # parse some useful stuff with feedzirra
     Feedzirra::Feed.add_common_feed_element(:link, :as => :hub, :value => :href, :with =>{:type => :hub})
     Feedzirra::Feed.add_common_feed_element(:id)
 
-    parsed_feed = Feedzirra::Feed.fetch_and_parse(url)
+    stored_feed = PFeed.list_feeds(:keys => [url], :include_docs => true).first
+
+    # use last-modified info if present
+    options = if stored_feed.nil?
+                {}
+              else
+                doc = stored_feed["doc"]
+                {
+                 :if_none_match => Base64.strict_decode64(doc["etag"]),
+                 :if_modified_since => Time.new(doc["last_modified"])
+                }
+              end
+    parsed_feed = Feedzirra::Feed.fetch_and_parse(url, options)
+
+    return if parsed_feed == 304 # No modification; move along
+    return if parsed_feed.respond_to? :to_i # An error during retrieve; maybe next time?
 
     feed_entry = PFeed.base_couch_entry(parsed_feed).merge({
       :type => :feed,
       :description => parsed_feed.description,
       :url => parsed_feed.feed_url,
+      :last_modified => parsed_feed.last_modified,
+      :etag => Base64.strict_encode64(parsed_feed.etag), # we don't want any fun stuff
       :hub => parsed_feed.hub, # feedzirra can only fetch one value for the moment
     })
 
@@ -59,12 +77,9 @@ module PFeed
     }
   end
 
-  def self.list_feeds ids=nil
-    if ids
-      feeds = DB.view 'pfeed-couch/list-feeds-by-url', {:params => ids}
-    else
-      feeds = DB.view 'pfeed-couch/list-feeds-by-url'
-    end
+  # params can be what couchdb views accept
+  def self.list_feeds params={}
+    feeds = DB.view 'pfeed-couch/list-feeds-by-url', params
     feeds["rows"]
   end
 
