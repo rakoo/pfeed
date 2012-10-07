@@ -30,11 +30,13 @@ module PFeed
 
       PFeed.base_couch_entry(entry).merge({
         :type => :entry,
+        :feed_id => parsed_feed.id,
         :url => entry.url,
         :updated => entry.published,
         :author => entry.author,
         :summary => entry.summary,
         :published => entry.published,
+        :updated => entry.updated,
         :categories => entry.categories,
         :_attachments => {
           :content => {
@@ -53,7 +55,6 @@ module PFeed
     id = source.id
     {
       :_id => id,
-      :feed_id => source.id,
       :title => source.title,
     }
   end
