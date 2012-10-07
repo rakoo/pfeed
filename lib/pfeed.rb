@@ -50,7 +50,7 @@ module PFeed
 
   def self.base_couch_entry source
 
-    id = source.id || (source.respond_to?(:feed_url) ? source.feed_url : source.url)
+    id = source.id
     {
       :_id => id,
       :feed_id => source.id,
