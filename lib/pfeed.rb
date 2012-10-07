@@ -57,4 +57,14 @@ module PFeed
       :title => source.title,
     }
   end
+
+  def self.list_feeds ids=nil
+    if ids
+      feeds = DB.view 'pfeed-couch/list-feeds-by-url', {:params => ids}
+    else
+      feeds = DB.view 'pfeed-couch/list-feeds-by-url'
+    end
+    feeds["rows"]
+  end
+
 end

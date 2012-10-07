@@ -13,14 +13,14 @@ DB = CouchRest.new("http://localhost:5984").database("pfeed")
 get '/list_feeds' do
   content_type :json
 
-  JSON.dump(list_feeds)
+  JSON.dump(PFeed.list_feeds)
 end
 
 post '/add_feed' do
   content_type :json
 
   url = params["url"]
-  existing_rows = list_feeds([url])
+  existing_rows = PFeed.list_feeds([url])
   if existing_rows.size == 1 and existing_rows.first["key"] == url
     doc = CouchRest.get "#{DBNAME}/#{CGI.escape(existing_rows.first["id"])}"
   else
@@ -35,15 +35,4 @@ post '/add_feed' do
   end
 
   JSON.dump doc
-end
-
-helpers do
-  def list_feeds ids=nil
-    if ids
-      feeds = DB.view 'pfeed-couch/list-feeds-by-url', {:params => ids}
-    else
-      feeds = DB.view 'pfeed-couch/list-feeds-by-url'
-    end
-    feeds["rows"]
-  end
 end
