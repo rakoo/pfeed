@@ -9,7 +9,7 @@ feeds_urls = DB.view("pfeed-couch/list-feeds-without-hubs")["rows"].map{|feed| f
 exit if feeds_urls.empty?
 
 parsed_feeds = feeds_urls.map do |url|
-  modified_bits = PFeed.parse_and_explode_feed(url)
+  modified_bits = PFeed.fetch_and_parse_explode(url)
   modified_bits.nil? ? nil : modified_bits.values
 end.compact.flatten
 

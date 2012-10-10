@@ -1,5 +1,4 @@
 require 'sinatra'
-require 'trollop'
 require 'json'
 require 'couchrest'
 require 'pfeed'
@@ -24,7 +23,7 @@ post '/add_feed' do
   if existing_rows.size == 1 and existing_rows.first["key"] == url
     doc = existing_rows.first["doc"]
   else
-    if (exploded_feed = PFeed.parse_and_explode_feed url)
+    if (exploded_feed = PFeed.fetch_and_parse_explode url)
       payload = {:docs => exploded_feed.values.flatten}
       CouchRest.post(DBNAME + "/_bulk_docs", payload)
 
