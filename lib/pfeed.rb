@@ -52,27 +52,23 @@ module PFeed
 
     feed_entries = parsed_feed.entries.map do |entry|
 
-      # Here be ruby 1.9 dragons
-      content = begin
-                  entry.content.encode(Encoding::UTF_8)
-                rescue
-                  entry.content.force_encoding(Encoding::UTF_8)
-                end
-
       PFeed.base_couch_entry(entry).merge({
         :type => :entry,
         :feed_id => parsed_feed.id,
         :url => entry.url,
         :updated => entry.published,
         :author => entry.author,
-        :summary => entry.summary,
         :published => entry.published,
         :updated => entry.updated,
         :categories => entry.categories,
         :_attachments => {
           :content => {
             :content_type => "text/plain",
-            :data => Base64.strict_encode64(content)
+            :data => Base64.strict_encode64(try_encode(entry.content))
+          },
+          :summary => {
+            :content_type => "text/plain",
+            :data => Base64.strict_encode64(try_encode(entry.summary))
           }
         }
       })
@@ -92,6 +88,14 @@ module PFeed
   def self.list_feeds params={}
     feeds = DB.view 'pfeed-couch/list-feeds-by-url', params
     feeds["rows"]
+  end
+
+  def self.try_encode str
+    begin
+      (str || "").encode(Encoding::UTF_8)
+    rescue
+      str.force_encoding(Encoding::UTF_8)
+    end
   end
 
 end
