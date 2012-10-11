@@ -27,6 +27,19 @@ post '/add_feed' do
       RestClient.post(DBNAME + "/_bulk_docs", JSON.dump(payload), :content_type => :json)
 
       doc = exploded_feed[:feed]
+
+      unless doc[:hub].nil?
+        # There's a hub ! Subscribe to it
+        params = {
+          "hub.callback" => "http://otokar.krakotz.co.cc:80/subscribe/#{CGI.escape(url)}",
+          "hub.mode" => "subscribe",
+          "hub.topic" => doc[:url],
+          "hub.verify" => "sync"
+        }
+
+        RestClient.post doc[:hub], :params => params
+      end
+
     else
       doc = {:error => "error while parsing #{url}"}
     end
