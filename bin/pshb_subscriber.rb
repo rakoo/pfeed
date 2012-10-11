@@ -8,7 +8,7 @@ DBNAME = "http://localhost:5984/pfeed"
 post '/newcontent/:url' do |url|
 
   Thread.new do
-    data = PFeed.parse_and_explode request.body.read
+    data = PFeed.parse_and_explode request.body.read, CGI.unescape(url)
     payload = {:docs => data.values.flatten}
     CouchRest.post(DBNAME + "/_bulk_docs", payload)
   end

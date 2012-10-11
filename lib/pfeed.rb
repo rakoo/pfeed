@@ -1,14 +1,16 @@
 require 'feedzirra'
 require 'base64'
+require 'couchrest'
 
 module PFeed
+  DB = CouchRest.new("http://localhost:5984").database("pfeed")
 
-  def self.parse_and_explode str
+  def self.parse_and_explode str, url
     # parse some useful stuff with feedzirra
     Feedzirra::Feed.add_common_feed_element(:link, :as => :hub, :value => :href, :with =>{:type => :hub})
     Feedzirra::Feed.add_common_feed_element(:id)
 
-    explode Feedzirra::Feed.parse(str)
+    explode Feedzirra::Feed.parse(str), url
   end
 
 
@@ -16,6 +18,9 @@ module PFeed
   ## feedzirra
   def self.fetch_and_parse_explode url
 
+    # parse some useful stuff with feedzirra
+    Feedzirra::Feed.add_common_feed_element(:link, :as => :hub, :value => :href, :with =>{:type => :hub})
+    Feedzirra::Feed.add_common_feed_element(:id)
 
     stored_feed = PFeed.list_feeds(:keys => [url], :include_docs => true).first
 
@@ -29,14 +34,14 @@ module PFeed
                  :if_modified_since => Time.new(doc["last_modified"])
                 }
               end
-    raw = Feedzirra::Feed.fetch_raw(url, options)
+    parsed_feed = Feedzirra::Feed.fetch_and_parse(url, options)
 
-    return if raw.to_i == 404 # There was an error during retrieve
+    return if parsed_feed.respond_to? :to_i # There was an error during retrieve
 
-    parse_and_explode raw
+    explode parsed_feed
   end
 
-  def self.explode parsed_feed
+  def self.explode parsed_feed, url=nil
     
     return if parsed_feed == 304 # No modification; move along
     return if parsed_feed.respond_to? :to_i # An error during retrieve; maybe next time?
@@ -44,11 +49,13 @@ module PFeed
     feed_entry = PFeed.base_couch_entry(parsed_feed).merge({
       :type => :feed,
       :description => parsed_feed.description,
-      :url => parsed_feed.feed_url,
+      :url => parsed_feed.feed_url || url,
       :last_modified => parsed_feed.last_modified,
       :etag => Base64.strict_encode64(parsed_feed.etag || ""), # we don't want any fun stuff
       :hub => parsed_feed.hub, # feedzirra can only fetch one value for the moment
     })
+
+    feed_entry[:_id] = feed_entry[:url] if feed_entry[:_id].nil?
 
     feed_entries = parsed_feed.entries.map do |entry|
 
