@@ -14,10 +14,13 @@ get '/list_feeds' do
   JSON.dump(PFeed.list_feeds)
 end
 
+## params needed:
+## * url : a url-encoded url
+
 post '/add_feed' do
   content_type :json
 
-  url = params["url"]
+  url = CGI.unescape params["url"]
   existing_rows = PFeed.list_feeds(:keys => [url], :include_docs => true)
   if existing_rows.size == 1 and existing_rows.first["key"] == url
     doc = existing_rows.first["doc"]
