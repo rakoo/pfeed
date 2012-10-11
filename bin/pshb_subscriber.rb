@@ -5,7 +5,7 @@ require 'pfeed'
 
 DBNAME = "http://localhost:5984/pfeed"
 
-post '/newcontent/:url' do |url|
+post '/subscribe/:escaped_url' do |espaced_url|
 
   Thread.new do
     data = PFeed.parse_and_explode request.body.read, CGI.unescape(url)
@@ -14,4 +14,22 @@ post '/newcontent/:url' do |url|
   end
 
   204 # We have received the update; processing will be done by someone else, somewhere else.
+end
+
+get '/subscribe/:escaped_url' do |escaped_url|
+  challenge = request["hub.challenge"]
+
+  case request["hub.mode"]
+  when "subscribe"
+    url = CGI.unescape(request["hub.topic"])
+
+    puts "trying to subscribe to #{url}"
+    if PFeed.list_feeds(:keys => [url]).size == 0
+      404
+    else
+      challenge
+    end
+  when "unsubscribe"
+    challenge
+  end
 end
