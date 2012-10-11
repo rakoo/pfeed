@@ -1,13 +1,12 @@
 require 'sinatra'
 require 'json'
-require 'couchrest'
+require 'rest-client'
 require 'pfeed'
 
 set :port, 9494
 set :host, 'localhost'
 
 DBNAME = "http://localhost:5984/pfeed"
-DB = CouchRest.new("http://localhost:5984").database("pfeed")
 
 get '/list_feeds' do
   content_type :json
@@ -25,7 +24,7 @@ post '/add_feed' do
   else
     if (exploded_feed = PFeed.fetch_and_parse_explode url)
       payload = {:docs => exploded_feed.values.flatten}
-      CouchRest.post(DBNAME + "/_bulk_docs", payload)
+      RestClient.post(DBNAME + "/_bulk_docs", JSON.dump(payload), :content_type => :json)
 
       doc = exploded_feed[:feed]
     else
