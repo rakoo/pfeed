@@ -5,10 +5,10 @@ require 'pfeed'
 
 DBNAME = "http://localhost:5984/pfeed"
 
-post '/subscribe/:escaped_url' do |espaced_url|
+post '/subscribe/:escaped_url' do |escaped_url|
 
   Thread.new do
-    data = PFeed.parse_and_explode request.body.read, CGI.unescape(url)
+    data = PFeed.parse_and_explode request.body.read, CGI.unescape(escaped_url)
     payload = {:docs => data.values.flatten}
     CouchRest.post(DBNAME + "/_bulk_docs", payload)
   end
