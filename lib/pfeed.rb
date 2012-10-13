@@ -63,7 +63,7 @@ module PFeed
 
       PFeed.base_couch_entry(entry).merge({
         :type => :entry,
-        :feed_id => parsed_feed.id,
+        :feed_id => feed_entry[:_id],
         :url => entry.url,
         :updated => entry.published,
         :author => entry.author,
@@ -103,6 +103,7 @@ module PFeed
     begin
       (str || "").encode(Encoding::UTF_8)
     rescue
+      "cannot decode, forcing encoding"
       str.force_encoding(Encoding::UTF_8)
     end
   end
