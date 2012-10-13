@@ -46,7 +46,7 @@ module PFeed
     return if parsed_feed == 304 # No modification; move along
     return if parsed_feed.respond_to? :to_i # An error during retrieve; maybe next time?
 
-    parsed_feed.sanitize_entries!
+    #parsed_feed.sanitize_entries! # is breaking everything for the moment...
 
     feed_entry = PFeed.base_couch_entry(parsed_feed).merge({
       :type => :feed,
