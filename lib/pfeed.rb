@@ -28,11 +28,12 @@ module PFeed
     options = if stored_feed.nil?
                 {}
               else
+                ret = {}
                 doc = stored_feed["doc"]
-                {
-                 :if_none_match => Base64.strict_decode64(doc["etag"]),
-                 :if_modified_since => Time.new(doc["last_modified"])
-                }
+                ret.merge({:if_none_match => Base64.strict_decode64(doc["etag"])}) if doc["etag"]
+                ret.merge({:if_modified_since => Time.new(doc["last_modified"])}) if doc["last_modified"]
+
+                ret
               end
     parsed_feed = Feedzirra::Feed.fetch_and_parse(url, options)
 
