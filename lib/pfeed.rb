@@ -109,4 +109,25 @@ module PFeed
     end
   end
 
+  def self.parse_opml body
+    feeds = []
+
+    parser = Nokogiri::XML(body) # body shouldn't be too big, we can keep it in memory.
+    parser.css('body>outline').each do |outline|
+
+      if outline.children.size == 0 # top-level
+        feed = {:url => outline['xmlUrl'], :title => outline['title']}
+        feeds << feed
+      else
+        outline.children.each do |child|
+          next unless child.name == 'outline' # discard all the \n...
+          feed = {:url => child['xmlUrl'], :title => child['title'], :group => outline['title']}
+          feeds << feed
+        end
+      end
+    end
+
+    feeds
+  end
+
 end

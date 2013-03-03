@@ -20,7 +20,39 @@ end
 post '/add_feed' do
   content_type :json
 
-  url = CGI.unescape params["url"]
+  return [404, "No url given as parameter"] unless params["url"]
+  doc = add_feed CGI.unescape(params["url"])
+  JSON.dump doc
+end
+
+post '/import_opml' do
+  content_type :json
+
+  return [500, "No opml given in input"] unless request.body
+
+  Thread.new do
+    request.body.rewind
+
+    feeds = PFeed.parse_opml CGI.unescape(request.body.read)
+    num = feeds.size
+    done = 0
+    breakpoint = Time.now.to_i
+    feeds.each do |feed|
+      add_feed feed[:url]
+      done += 1
+      if Time.now.to_i - breakpoint >= 2
+        breakpoint = Time.now.to_i
+        puts "added #{done} feeds, #{num - done} to go"
+      end
+    end
+    
+    puts "done adding feeds !"
+  end
+
+  204
+end
+
+def add_feed url
   existing_rows = PFeed.list_feeds(:keys => [url], :include_docs => true)
   if existing_rows.size == 1 and existing_rows.first["key"] == url
     doc = existing_rows.first["doc"]
@@ -48,5 +80,5 @@ post '/add_feed' do
     end
   end
 
-  JSON.dump doc
+  doc
 end
